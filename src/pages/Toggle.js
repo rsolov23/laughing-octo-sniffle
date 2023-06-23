@@ -58,7 +58,6 @@ function Toggle() {
           {/* Heading for products */}
           <Text
             textShadow="0px 0px 1.5px black"
-            WebkitTextStroke="1px black"
             fontSize="3xl"
             display="block"
             variant="h2"
@@ -82,7 +81,6 @@ function Toggle() {
           {/* Heading for cart */}
           <Text
             textShadow="0px 0px 1.5px black"
-            WebkitTextStroke="1px black"
             fontSize="3xl"
             display="block"
             variant="h2"
@@ -121,8 +119,9 @@ function Toggle() {
 
           {/* Image */}
           {isVisible && (
-            <Box boxSize="sm">
+            <Flex direction="column" align="center" gap={4}>
               <Text
+                align="center"
                 fontSize="5xl"
                 variant="h2"
                 as="b"
@@ -130,8 +129,14 @@ function Toggle() {
               >
                 Conditional Rendering
               </Text>
-              <Image src={puppy} alt="Apollo-boston-terrier" />
-            </Box>
+              <Image
+                 boxSize='100px'
+                 objectFit='cover'
+                src={puppy}
+                alt="Apollo-boston-terrier"
+                className="popo"
+              />
+            </Flex>
           )}
         </Flex>
       </Container>

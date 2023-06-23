@@ -29,7 +29,6 @@ function Fetch() {
         {/* Heading for products */}
         <Text
           textShadow="0px 0px 1.5px black"
-          WebkitTextStroke="1px black"
           fontSize="3xl"
           display="block"
           variant="h2"
