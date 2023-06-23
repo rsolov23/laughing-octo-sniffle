@@ -113,7 +113,15 @@ function Links() {
                 Traversy Media
               </Link>
             </ListItem>
-
+            <ListItem>
+              <Icon as={StarIcon} color="green.500" />
+              <Link
+                to="https://github.com/gitname/react-gh-pages"
+                target="_blank"
+              >
+                Deploy
+              </Link>
+            </ListItem>
             {/* You can also use custom icons from react-icons */}
           </List>
         </Box>
