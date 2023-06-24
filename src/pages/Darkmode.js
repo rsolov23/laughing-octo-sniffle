@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Flex, Button, Text } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 import "animate.css";
-import "../App.css";
+
 
 // The useState hook is used to create a state variable theme with an initial value of "light".
 // The toggleTheme function toggles the theme between "light" and "dark" based on the current value of the theme state.
@@ -39,20 +39,20 @@ function DarkMode() {
     >
       {/* Button to toggle the theme */}
       <Button
-        onClick={toggleTheme}
-        mb={4}
-        size="lg"
-        height="75px"
-        width="100px"
-        border="2px"
-        borderColor="green.500"
-      >
-        {theme === "light" ? (
-          <Icon icon="carbon:sun" className="icon animate__swing" />
-        ) : (
-          <Icon icon="carbon:moon" className="icon animate__swing" />
-        )}
-      </Button>
+  onClick={toggleTheme} // Trigger the toggleTheme function when the button is clicked
+  mb={4} 
+  size="lg"
+  height="75px" 
+  width="100px" 
+  border="2px" 
+  borderColor="green.500" 
+>
+  {theme === "light" ? ( // Conditionally render an icon based on the theme
+    <Icon icon="carbon:sun" className="icon animate__swing" /> // Render a sun icon if the theme is light
+  ) : (
+    <Icon icon="carbon:moon" className="icon animate__swing" /> // Render a moon icon if the theme is not light (presumably dark)
+  )}
+</Button>
 
       {/* Heading */}
       <Text fontSize="5xl" className="animate__jello">

@@ -102,11 +102,7 @@ function Sample() {
 export default Sample;
 
 // The slice() method is being used to extract a subset of elements from the mockData array.
-
 // In the Sample component, the mockData array is being sliced into two parts:
-
 // The first Example component uses mockData.slice(0, 3), which means it extracts elements from index 0 (inclusive) to index 3 (exclusive). This will create a new array containing the first three elements of mockData.
-
 // The second Example component uses mockData.slice(3), which means it extracts elements from index 3 (inclusive) to the end of the array. This will create a new array containing the remaining elements starting from index 3 to the end of mockData.
-
 // By using the slice() method, the original mockData array remains unmodified, and two separate subsets of the data are passed as data props to the respective Example components.
